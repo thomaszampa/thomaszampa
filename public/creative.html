@@ -111,6 +111,15 @@
                 </section>
               </div>
             </div>
+
+            <div class="clearfix"></div>
+            
+            <div class="work-images grid">
+                <ul class="grid-lod effect-2" id="grid">
+                    <li><a href="https://soundcloud.com/yungjekyll/meditacion" target="_blank" class= "DRJ-cover-1"><img src="images/content/drj_cover_1.png" alt="" class="img-responsive"/></a></li>
+                    <li><a href="https://soundcloud.com/yungjekyll/blue-light" target="_blank" class= "DRJ-cover-2"><img src="images/content/drj_cover_2.png" alt="" class="img-responsive"></a></li>
+                </ul>
+            </div>
           </div>
         </main>
 
@@ -250,6 +259,11 @@
 
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/effects/masonry.pkgd.min.js"  type="text/javascript"></script>
+        <script src="js/effects/imagesloaded.js"  type="text/javascript"></script>
+        <script src="js/effects/classie.js"  type="text/javascript"></script>
+        <script src="js/effects/AnimOnScroll.js"  type="text/javascript"></script>
+        <script src="js/effects/modernizr.custom.js"></script>
 
         <!-- jquery.countdown -->
         <script src="js/html5shiv.js" type="text/javascript"></script>
@@ -319,9 +333,9 @@ html, body {
 
 /* Main */
 
-main[role="main-inner-wrapper"] {
+/*main[role="main-inner-wrapper"] {
   padding-bottom: 225px;
-}
+}*/
 
 /*DRJ TEXT*/
 .DRJ-1 {
@@ -351,6 +365,16 @@ a.DRJ-1:hover {
 a.DRJ-2:hover {
   color: #FFCC3E;
   transform: translateX(6px);
+}
+
+/* DRJ Covers */
+
+a.DRJ-covers-1:hover {
+  transform: scale(1.1);
+}
+
+a.DRJ-covers-2:hover {
+  transform: scale(1.1);
 }
 
 /* Texture */
