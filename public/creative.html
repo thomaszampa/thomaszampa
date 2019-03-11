@@ -118,9 +118,14 @@
 
         <!-- don soldi -->
 
-        <div onmouseenter="stopAudio2(); stopAudio1();">
-            <img src="images/content/punk.png">
-        </div>
+        <main>
+          <div class="row" style="padding-bottom: 525px; margin-top: 40px; margin-bottom: 40px">
+            <div onmouseenter="stopAudio1(); stopAudio2();" class="col-lg-12">
+              <div class="wrap2">
+              </div>
+            </div> 
+          </div>
+        </main>
 
         <main role="main-inner-wrapper" class="container">
           <div class="work-details">
@@ -269,6 +274,11 @@
       $(this).css('background-position', x + 'px ' + y + 'px');
   });
 
+    $('.wrap2').mousemove(function(e) {
+      var x = (e.pageX * -1 / 5), y = (e.pageY * -1 / 5);
+      $(this).css('background-position', x + 'px ' + y + 'px');
+  });
+
   // Play Audio
 
   //Defining variable based on unique ID
@@ -356,6 +366,19 @@ a.DRJ-2:hover {
   background-repeat: no-repeat;
   background-size: 150%;
   background-position: center top;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 560px;
+}
+
+.wrap2 {
+  background-image: url('../../images/creative_content/ds_01.jpg');
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: center;
   left: 0;
   position: absolute;
   top: 0;
